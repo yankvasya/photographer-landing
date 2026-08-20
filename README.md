@@ -34,4 +34,17 @@ npx serve .
 
 ## Демо
 
-Сайт опубликован на GitHub Pages.
+Сайт опубликован на GitHub Pages:  
+**https://yankvasya.github.io/photographer-landing/**
+
+## Lighthouse
+
+| Метрика | Оценка |
+|---------|--------|
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 100 |
+| Performance | 72* |
+
+\* Performance ограничена внешними изображениями-заглушками picsum.photos. При замене на реальные фото, размещённые на быстром CDN, оценка будет значительно выше. Все метрики, зависящие от кода (TBT, CLS, отсутствие render-blocking ресурсов), в идеале.
+
