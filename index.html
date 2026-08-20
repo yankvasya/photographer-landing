@@ -9,8 +9,10 @@
   <meta property="og:title" content="Анна Соколова — Фотограф">
   <meta property="og:description" content="Семейные, портретные и свадебные съёмки в Москве.">
   <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232b2a28'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23b08d57' font-family='Georgia'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://picsum.photos">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,158 +34,160 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="container hero__inner">
-      <div class="hero__content reveal">
-        <p class="hero__eyebrow">Фотограф · Москва</p>
-        <h1 class="hero__title">Ловлю свет,<br>сохраняю&nbsp;моменты</h1>
-        <p class="hero__subtitle">Семейные, портретные и свадебные съёмки в естественном свете. Тёплые кадры, которые хочется пересматривать снова и снова.</p>
-        <a href="#contact" class="btn btn--primary">Записаться на съёмку</a>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Фотограф · Москва</p>
+          <h1 class="hero__title">Ловлю свет,<br>сохраняю&nbsp;моменты</h1>
+          <p class="hero__subtitle">Семейные, портретные и свадебные съёмки в естественном свете. Тёплые кадры, которые хочется пересматривать снова и снова.</p>
+          <a href="#contact" class="btn btn--primary">Записаться на съёмку</a>
+        </div>
+        <div class="hero__photo reveal reveal--delay">
+          <img src="https://picsum.photos/id/1015/900/1100" alt="Портретная фотография в естественном свете" loading="eager" fetchpriority="high" width="900" height="1100">
+        </div>
       </div>
-      <div class="hero__photo reveal reveal--delay">
-        <img src="https://picsum.photos/id/1015/900/1100" alt="Портретная фотография в естественном свете" loading="eager" width="900" height="1100">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Portfolio -->
-  <section class="portfolio section" id="portfolio">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 class="section__title">Портфолио</h2>
-        <p class="section__subtitle">Несколько историй из моей коллекции</p>
+    <!-- Portfolio -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Портфолио</h2>
+          <p class="section__subtitle">Несколько историй из моей коллекции</p>
+        </div>
+        <div class="grid">
+          <figure class="grid__item reveal">
+            <img src="https://picsum.photos/id/1011/800/1000" alt="Семейная съёмка на природе" loading="lazy" width="800" height="1000">
+            <figcaption>Семейная съёмка</figcaption>
+          </figure>
+          <figure class="grid__item reveal reveal--delay">
+            <img src="https://picsum.photos/id/1012/800/1000" alt="Портрет девушки" loading="lazy" width="800" height="1000">
+            <figcaption>Портрет</figcaption>
+          </figure>
+          <figure class="grid__item reveal">
+            <img src="https://picsum.photos/id/1013/800/1000" alt="Свадебная съёмка" loading="lazy" width="800" height="1000">
+            <figcaption>Свадьба</figcaption>
+          </figure>
+          <figure class="grid__item reveal reveal--delay">
+            <img src="https://picsum.photos/id/1016/800/1000" alt="Портрет в студии" loading="lazy" width="800" height="1000">
+            <figcaption>Студийный портрет</figcaption>
+          </figure>
+          <figure class="grid__item reveal">
+            <img src="https://picsum.photos/id/1018/800/1000" alt="Детская съёмка" loading="lazy" width="800" height="1000">
+            <figcaption>Дети</figcaption>
+          </figure>
+          <figure class="grid__item reveal reveal--delay">
+            <img src="https://picsum.photos/id/1019/800/1000" alt="Пейзажная фотография" loading="lazy" width="800" height="1000">
+            <figcaption>Пейзаж</figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="grid">
-        <figure class="grid__item reveal">
-          <img src="https://picsum.photos/id/1011/800/1000" alt="Семейная съёмка на природе" loading="lazy" width="800" height="1000">
-          <figcaption>Семейная съёмка</figcaption>
-        </figure>
-        <figure class="grid__item reveal reveal--delay">
-          <img src="https://picsum.photos/id/1012/800/1000" alt="Портрет девушки" loading="lazy" width="800" height="1000">
-          <figcaption>Портрет</figcaption>
-        </figure>
-        <figure class="grid__item reveal">
-          <img src="https://picsum.photos/id/1013/800/1000" alt="Свадебная съёмка" loading="lazy" width="800" height="1000">
-          <figcaption>Свадьба</figcaption>
-        </figure>
-        <figure class="grid__item reveal reveal--delay">
-          <img src="https://picsum.photos/id/1016/800/1000" alt="Портрет в студии" loading="lazy" width="800" height="1000">
-          <figcaption>Студийный портрет</figcaption>
-        </figure>
-        <figure class="grid__item reveal">
-          <img src="https://picsum.photos/id/1018/800/1000" alt="Детская съёмка" loading="lazy" width="800" height="1000">
-          <figcaption>Дети</figcaption>
-        </figure>
-        <figure class="grid__item reveal reveal--delay">
-          <img src="https://picsum.photos/id/1019/800/1000" alt="Пейзажная фотография" loading="lazy" width="800" height="1000">
-          <figcaption>Пейзаж</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 class="section__title">Услуги и цены</h2>
-        <p class="section__subtitle">Прозрачные условия — никаких скрытых доплат</p>
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Услуги и цены</h2>
+          <p class="section__subtitle">Прозрачные условия — никаких скрытых доплат</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <h3 class="card__title">Портретная съёмка</h3>
+            <p class="card__desc">Индивидуальная съёмка в студии или на улице. Помогу с позами и образом.</p>
+            <p class="card__price">от 5 000 ₽</p>
+            <ul class="card__list">
+              <li>1 час съёмки</li>
+              <li>30 обработанных фото</li>
+              <li>Срок — 5 дней</li>
+            </ul>
+          </article>
+          <article class="card card--featured reveal reveal--delay">
+            <h3 class="card__title">Семейная съёмка</h3>
+            <p class="card__desc">Тёплая атмосфера и живые эмоции. Идеально для семей с детьми.</p>
+            <p class="card__price">от 8 000 ₽</p>
+            <ul class="card__list">
+              <li>1,5 часа съёмки</li>
+              <li>50 обработанных фото</li>
+              <li>Срок — 7 дней</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title">Свадебная съёмка</h3>
+            <p class="card__desc">Полное сопровождение вашего дня: от сборов до первого танца.</p>
+            <p class="card__price">от 25 000 ₽</p>
+            <ul class="card__list">
+              <li>До 8 часов съёмки</li>
+              <li>300+ обработанных фото</li>
+              <li>Срок — 14 дней</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="cards">
-        <article class="card reveal">
-          <h3 class="card__title">Портретная съёмка</h3>
-          <p class="card__desc">Индивидуальная съёмка в студии или на улице. Помогу с позами и образом.</p>
-          <p class="card__price">от 5 000 ₽</p>
-          <ul class="card__list">
-            <li>1 час съёмки</li>
-            <li>30 обработанных фото</li>
-            <li>Срок — 5 дней</li>
-          </ul>
-        </article>
-        <article class="card card--featured reveal reveal--delay">
-          <h3 class="card__title">Семейная съёмка</h3>
-          <p class="card__desc">Тёплая атмосфера и живые эмоции. Идеально для семей с детьми.</p>
-          <p class="card__price">от 8 000 ₽</p>
-          <ul class="card__list">
-            <li>1,5 часа съёмки</li>
-            <li>50 обработанных фото</li>
-            <li>Срок — 7 дней</li>
-          </ul>
-        </article>
-        <article class="card reveal">
-          <h3 class="card__title">Свадебная съёмка</h3>
-          <p class="card__desc">Полное сопровождение вашего дня: от сборов до первого танца.</p>
-          <p class="card__price">от 25 000 ₽</p>
-          <ul class="card__list">
-            <li>До 8 часов съёмки</li>
-            <li>300+ обработанных фото</li>
-            <li>Срок — 14 дней</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Reviews -->
-  <section class="reviews section" id="reviews">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 class="section__title">Отзывы</h2>
-        <p class="section__subtitle">Что говорят мои клиенты</p>
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Отзывы</h2>
+          <p class="section__subtitle">Что говорят мои клиенты</p>
+        </div>
+        <div class="reviews__grid">
+          <blockquote class="review reveal">
+            <p class="review__text">«Анна — волшебница! Смогла расслабить всю нашу семью, даже папу. Фото получились живые и очень тёплые. Обязательно вернёмся!»</p>
+            <footer class="review__author">Мария и Сергей</footer>
+          </blockquote>
+          <blockquote class="review reveal reveal--delay">
+            <p class="review__text">«Свадебные фото превзошли все ожидания. Каждый кадр — маленькая история. Спасибо за терпение и внимание к деталям!»</p>
+            <footer class="review__author">Алина</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p class="review__text">«Заказывала портретную съёмку для соцсетей. Анна помогла с образами и позами, всё прошло легко и комфортно. Рекомендую!»</p>
+            <footer class="review__author">Дмитрий</footer>
+          </blockquote>
+        </div>
       </div>
-      <div class="reviews__grid">
-        <blockquote class="review reveal">
-          <p class="review__text">«Анна — волшебница! Смогла расслабить всю нашу семью, даже папу. Фото получились живые и очень тёплые. Обязательно вернёмся!»</p>
-          <footer class="review__author">Мария и Сергей</footer>
-        </blockquote>
-        <blockquote class="review reveal reveal--delay">
-          <p class="review__text">«Свадебные фото превзошли все ожидания. Каждый кадр — маленькая история. Спасибо за терпение и внимание к деталям!»</p>
-          <footer class="review__author">Алина</footer>
-        </blockquote>
-        <blockquote class="review reveal">
-          <p class="review__text">«Заказывала портретную съёмку для соцсетей. Анна помогла с образами и позами, всё прошло легко и комфортно. Рекомендую!»</p>
-          <footer class="review__author">Дмитрий</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <div class="section__head reveal">
-        <h2 class="section__title">Запись на съёмку</h2>
-        <p class="section__subtitle">Оставьте заявку — я свяжусь с вами в течение дня</p>
-      </div>
-      <form class="form reveal" id="booking-form" novalidate>
-        <div class="form__row">
-          <div class="form__field">
-            <label for="name">Имя</label>
-            <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Запись на съёмку</h2>
+          <p class="section__subtitle">Оставьте заявку — я свяжусь с вами в течение дня</p>
+        </div>
+        <form class="form reveal" id="booking-form" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="form__field">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
           </div>
           <div class="form__field">
-            <label for="phone">Телефон</label>
-            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            <label for="type">Тип съёмки</label>
+            <select id="type" name="type">
+              <option value="portrait">Портретная</option>
+              <option value="family">Семейная</option>
+              <option value="wedding">Свадебная</option>
+            </select>
           </div>
-        </div>
-        <div class="form__field">
-          <label for="type">Тип съёмки</label>
-          <select id="type" name="type">
-            <option value="portrait">Портретная</option>
-            <option value="family">Семейная</option>
-            <option value="wedding">Свадебная</option>
-          </select>
-        </div>
-        <div class="form__field">
-          <label for="message">Комментарий</label>
-          <textarea id="message" name="message" rows="4" placeholder="Расскажите о вашей идее"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary">Отправить заявку</button>
-        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
+          <div class="form__field">
+            <label for="message">Комментарий</label>
+            <textarea id="message" name="message" rows="4" placeholder="Расскажите о вашей идее"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
