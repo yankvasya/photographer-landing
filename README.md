@@ -1,51 +1,50 @@
-# Анна Соколова — Лендинг фотографа
+# Anna Sokolova — Photographer Landing Page
 
-Одностраничный лендинг для фотографа в минималистичном стиле. Чистый HTML/CSS/JS без фреймворков.
+A single-page landing page for a photographer in a minimalist style. Clean HTML/CSS/JS with no frameworks. Bilingual (English primary, Russian secondary) with a language switcher in the header.
 
-## Секции
+## Sections
 
-- **Hero** — крупное фото и слоган
-- **Портфолио** — сетка фотографий с hover-эффектами
-- **Услуги и цены** — три тарифа
-- **Отзывы** — карточки клиентов
-- **Форма записи** — с валидацией и маской телефона
+- **Hero** — large photo and slogan
+- **Portfolio** — photo grid with hover effects
+- **Services & pricing** — three pricing plans
+- **Reviews** — client testimonials
+- **Booking form** — with validation and phone mask
 
-## Особенности
+## Features
 
-- 📱 Полная адаптивность (мобильное меню-бургер)
-- ✨ Анимации появления при скролле (IntersectionObserver)
-- 🎨 Минимализм, воздух, много белого пространства
-- ♿ Поддержка `prefers-reduced-motion`
-- 🚀 Оптимизировано под Lighthouse (lazy-loading, preconnect, семантика)
+- 🌐 **Bilingual** — English (primary) and Russian, switchable via the header toggle; choice is saved in `localStorage`
+- 📱 Fully responsive (mobile burger menu)
+- ✨ Scroll reveal animations (IntersectionObserver)
+- 🎨 Minimalism, air, lots of white space
+- ♿ `prefers-reduced-motion` support
+- 🚀 Optimized for Lighthouse (lazy-loading, preconnect, semantics)
 
-## Запуск
+## Run
 
-Просто откройте `index.html` в браузере или запустите локальный сервер:
+Simply open `index.html` in a browser or run a local server:
 
 ```bash
 npx serve .
 ```
 
-## Технологии
+## Technologies
 
 - HTML5
-- CSS3 (CSS-переменные, Grid, Flexbox, media queries)
+- CSS3 (CSS variables, Grid, Flexbox, media queries)
 - Vanilla JavaScript (ES6+)
 
-## Демо
+## Demo
 
-Сайт опубликован на GitHub Pages:  
+The site is published on GitHub Pages:  
 **https://yankvasya.github.io/photographer-landing/**
 
 ## Lighthouse
 
-| Метрика | Оценка |
-|---------|--------|
+| Metric | Score |
+|--------|-------|
 | Performance | 92 |
 | Accessibility | 100 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-Изображения скачаны и размещены локально в папке `images/`, шрифты подгружаются неблокирующим способом, hero-изображение предзагружается с `fetchpriority="high"`. LCP — 3.4s, CLS — 0.001, TBT — 0ms.
-
-
+Images are downloaded and stored locally in the `images/` folder, fonts load non-blocking, and the hero image is preloaded with `fetchpriority="high"`. LCP — 3.4s, CLS — 0.001, TBT — 0ms.

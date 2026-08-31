@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Анна Соколова — Фотограф | Съёмки в Москве</title>
-  <meta name="description" content="Профессиональный фотограф Анна Соколова. Семейные, портретные и свадебные съёмки в Москве. Индивидуальный подход, естественный свет, атмосферные кадры.">
+  <title>Anna Sokolova — Photographer | Photo shoots in Moscow</title>
+  <meta name="description" content="Professional photographer Anna Sokolova. Family, portrait and wedding photo shoots in Moscow. Individual approach, natural light, atmospheric shots.">
   <meta name="theme-color" content="#faf9f7">
-  <meta property="og:title" content="Анна Соколова — Фотограф">
-  <meta property="og:description" content="Семейные, портретные и свадебные съёмки в Москве.">
+  <meta property="og:title" content="Anna Sokolova — Photographer">
+  <meta property="og:description" content="Family, portrait and wedding photo shoots in Moscow.">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232b2a28'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23b08d57' font-family='Georgia'%3EA%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,14 +24,19 @@
   <!-- Header -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#hero" class="logo">Анна Соколова</a>
-      <nav class="nav" id="nav" aria-label="Основная навигация">
-        <a href="#portfolio" class="nav__link">Портфолио</a>
-        <a href="#services" class="nav__link">Услуги</a>
-        <a href="#reviews" class="nav__link">Отзывы</a>
-        <a href="#contact" class="nav__link nav__link--cta">Записаться</a>
+      <a href="#hero" class="logo" data-i18n="logo">Anna Sokolova</a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="#reviews" class="nav__link" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.book">Book a shoot</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-switch__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-switch__sep">/</span>
+        <button class="lang-switch__btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -42,13 +47,13 @@
     <section class="hero" id="hero">
       <div class="container hero__inner">
         <div class="hero__content reveal">
-          <p class="hero__eyebrow">Фотограф · Москва</p>
-          <h1 class="hero__title">Ловлю свет,<br>сохраняю&nbsp;моменты</h1>
-          <p class="hero__subtitle">Семейные, портретные и свадебные съёмки в естественном свете. Тёплые кадры, которые хочется пересматривать снова и снова.</p>
-          <a href="#contact" class="btn btn--primary">Записаться на съёмку</a>
+          <p class="hero__eyebrow" data-i18n="hero.eyebrow">Photographer · Moscow</p>
+          <h1 class="hero__title" data-i18n="hero.title">I catch the light,<br>I preserve&nbsp;moments</h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">Family, portrait and wedding photo shoots in natural light. Warm shots you'll want to revisit again and again.</p>
+          <a href="#contact" class="btn btn--primary" data-i18n="hero.cta">Book a photo shoot</a>
         </div>
         <div class="hero__photo reveal reveal--delay">
-          <img src="images/hero.jpg" alt="Портретная фотография в естественном свете" loading="eager" fetchpriority="high" width="572" height="700">
+          <img src="images/hero.jpg" alt="Portrait photography in natural light" loading="eager" fetchpriority="high" width="572" height="700">
         </div>
       </div>
     </section>
@@ -57,33 +62,33 @@
     <section class="portfolio section" id="portfolio">
       <div class="container">
         <div class="section__head reveal">
-          <h2 class="section__title">Портфолио</h2>
-          <p class="section__subtitle">Несколько историй из моей коллекции</p>
+          <h2 class="section__title" data-i18n="portfolio.title">Portfolio</h2>
+          <p class="section__subtitle" data-i18n="portfolio.subtitle">A few stories from my collection</p>
         </div>
         <div class="grid">
           <figure class="grid__item reveal">
-            <img src="images/portfolio-1.jpg" alt="Семейная съёмка на природе" loading="lazy" width="800" height="1000">
-            <figcaption>Семейная съёмка</figcaption>
+            <img src="images/portfolio-1.jpg" alt="Family photo shoot outdoors" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item1">Family shoot</figcaption>
           </figure>
           <figure class="grid__item reveal reveal--delay">
-            <img src="images/portfolio-2.jpg" alt="Портрет девушки" loading="lazy" width="800" height="1000">
-            <figcaption>Портрет</figcaption>
+            <img src="images/portfolio-2.jpg" alt="Portrait of a woman" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item2">Portrait</figcaption>
           </figure>
           <figure class="grid__item reveal">
-            <img src="images/portfolio-3.jpg" alt="Свадебная съёмка" loading="lazy" width="800" height="1000">
-            <figcaption>Свадьба</figcaption>
+            <img src="images/portfolio-3.jpg" alt="Wedding photo shoot" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item3">Wedding</figcaption>
           </figure>
           <figure class="grid__item reveal reveal--delay">
-            <img src="images/portfolio-4.jpg" alt="Портрет в студии" loading="lazy" width="800" height="1000">
-            <figcaption>Студийный портрет</figcaption>
+            <img src="images/portfolio-4.jpg" alt="Studio portrait" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item4">Studio portrait</figcaption>
           </figure>
           <figure class="grid__item reveal">
-            <img src="images/portfolio-5.jpg" alt="Детская съёмка" loading="lazy" width="800" height="1000">
-            <figcaption>Дети</figcaption>
+            <img src="images/portfolio-5.jpg" alt="Children photo shoot" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item5">Children</figcaption>
           </figure>
           <figure class="grid__item reveal reveal--delay">
-            <img src="images/portfolio-6.jpg" alt="Пейзажная фотография" loading="lazy" width="800" height="1000">
-            <figcaption>Пейзаж</figcaption>
+            <img src="images/portfolio-6.jpg" alt="Landscape photography" loading="lazy" width="800" height="1000">
+            <figcaption data-i18n="portfolio.item6">Landscape</figcaption>
           </figure>
         </div>
       </div>
@@ -93,38 +98,39 @@
     <section class="services section" id="services">
       <div class="container">
         <div class="section__head reveal">
-          <h2 class="section__title">Услуги и цены</h2>
-          <p class="section__subtitle">Прозрачные условия — никаких скрытых доплат</p>
+          <h2 class="section__title" data-i18n="services.title">Services & pricing</h2>
+          <p class="section__subtitle" data-i18n="services.subtitle">Transparent terms — no hidden fees</p>
         </div>
         <div class="cards">
           <article class="card reveal">
-            <h3 class="card__title">Портретная съёмка</h3>
-            <p class="card__desc">Индивидуальная съёмка в студии или на улице. Помогу с позами и образом.</p>
-            <p class="card__price">от 5 000 ₽</p>
+            <h3 class="card__title" data-i18n="services.card1.title">Portrait shoot</h3>
+            <p class="card__desc" data-i18n="services.card1.desc">Individual shoot in a studio or outdoors. I'll help with poses and styling.</p>
+            <p class="card__price" data-i18n="services.card1.price">from 5,000 ₽</p>
             <ul class="card__list">
-              <li>1 час съёмки</li>
-              <li>30 обработанных фото</li>
-              <li>Срок — 5 дней</li>
+              <li data-i18n="services.card1.l1">1 hour of shooting</li>
+              <li data-i18n="services.card1.l2">30 edited photos</li>
+              <li data-i18n="services.card1.l3">Delivery — 5 days</li>
             </ul>
           </article>
           <article class="card card--featured reveal reveal--delay">
-            <h3 class="card__title">Семейная съёмка</h3>
-            <p class="card__desc">Тёплая атмосфера и живые эмоции. Идеально для семей с детьми.</p>
-            <p class="card__price">от 8 000 ₽</p>
+            <span class="card__badge" data-i18n="services.featured">Popular</span>
+            <h3 class="card__title" data-i18n="services.card2.title">Family shoot</h3>
+            <p class="card__desc" data-i18n="services.card2.desc">Warm atmosphere and genuine emotions. Perfect for families with children.</p>
+            <p class="card__price" data-i18n="services.card2.price">from 8,000 ₽</p>
             <ul class="card__list">
-              <li>1,5 часа съёмки</li>
-              <li>50 обработанных фото</li>
-              <li>Срок — 7 дней</li>
+              <li data-i18n="services.card2.l1">1.5 hours of shooting</li>
+              <li data-i18n="services.card2.l2">50 edited photos</li>
+              <li data-i18n="services.card2.l3">Delivery — 7 days</li>
             </ul>
           </article>
           <article class="card reveal">
-            <h3 class="card__title">Свадебная съёмка</h3>
-            <p class="card__desc">Полное сопровождение вашего дня: от сборов до первого танца.</p>
-            <p class="card__price">от 25 000 ₽</p>
+            <h3 class="card__title" data-i18n="services.card3.title">Wedding shoot</h3>
+            <p class="card__desc" data-i18n="services.card3.desc">Full coverage of your day: from getting ready to the first dance.</p>
+            <p class="card__price" data-i18n="services.card3.price">from 25,000 ₽</p>
             <ul class="card__list">
-              <li>До 8 часов съёмки</li>
-              <li>300+ обработанных фото</li>
-              <li>Срок — 14 дней</li>
+              <li data-i18n="services.card3.l1">Up to 8 hours of shooting</li>
+              <li data-i18n="services.card3.l2">300+ edited photos</li>
+              <li data-i18n="services.card3.l3">Delivery — 14 days</li>
             </ul>
           </article>
         </div>
@@ -135,21 +141,21 @@
     <section class="reviews section" id="reviews">
       <div class="container">
         <div class="section__head reveal">
-          <h2 class="section__title">Отзывы</h2>
-          <p class="section__subtitle">Что говорят мои клиенты</p>
+          <h2 class="section__title" data-i18n="reviews.title">Reviews</h2>
+          <p class="section__subtitle" data-i18n="reviews.subtitle">What my clients say</p>
         </div>
         <div class="reviews__grid">
           <blockquote class="review reveal">
-            <p class="review__text">«Анна — волшебница! Смогла расслабить всю нашу семью, даже папу. Фото получились живые и очень тёплые. Обязательно вернёмся!»</p>
-            <footer class="review__author">Мария и Сергей</footer>
+            <p class="review__text" data-i18n="reviews.r1.text">"Anna is a magician! She managed to relax our whole family, even dad. The photos turned out lively and very warm. We'll definitely be back!"</p>
+            <footer class="review__author" data-i18n="reviews.r1.author">Maria and Sergey</footer>
           </blockquote>
           <blockquote class="review reveal reveal--delay">
-            <p class="review__text">«Свадебные фото превзошли все ожидания. Каждый кадр — маленькая история. Спасибо за терпение и внимание к деталям!»</p>
-            <footer class="review__author">Алина</footer>
+            <p class="review__text" data-i18n="reviews.r2.text">"The wedding photos exceeded all expectations. Every shot is a little story. Thank you for your patience and attention to detail!"</p>
+            <footer class="review__author" data-i18n="reviews.r2.author">Alina</footer>
           </blockquote>
           <blockquote class="review reveal">
-            <p class="review__text">«Заказывала портретную съёмку для соцсетей. Анна помогла с образами и позами, всё прошло легко и комфортно. Рекомендую!»</p>
-            <footer class="review__author">Дмитрий</footer>
+            <p class="review__text" data-i18n="reviews.r3.text">"I booked a portrait shoot for social media. Anna helped with styling and poses, everything went easily and comfortably. Highly recommend!"</p>
+            <footer class="review__author" data-i18n="reviews.r3.author">Dmitry</footer>
           </blockquote>
         </div>
       </div>
@@ -159,33 +165,33 @@
     <section class="contact section" id="contact">
       <div class="container">
         <div class="section__head reveal">
-          <h2 class="section__title">Запись на съёмку</h2>
-          <p class="section__subtitle">Оставьте заявку — я свяжусь с вами в течение дня</p>
+          <h2 class="section__title" data-i18n="contact.title">Book a photo shoot</h2>
+          <p class="section__subtitle" data-i18n="contact.subtitle">Leave a request — I'll get back to you within a day</p>
         </div>
         <form class="form reveal" id="booking-form" novalidate>
           <div class="form__row">
             <div class="form__field">
-              <label for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+              <label for="name" data-i18n="contact.name">Name</label>
+              <input type="text" id="name" name="name" placeholder="How should I address you" data-i18n-placeholder="contact.namePh" required>
             </div>
             <div class="form__field">
-              <label for="phone">Телефон</label>
-              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              <label for="phone" data-i18n="contact.phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" data-i18n-placeholder="contact.phonePh" required>
             </div>
           </div>
           <div class="form__field">
-            <label for="type">Тип съёмки</label>
+            <label for="type" data-i18n="contact.type">Type of shoot</label>
             <select id="type" name="type">
-              <option value="portrait">Портретная</option>
-              <option value="family">Семейная</option>
-              <option value="wedding">Свадебная</option>
+              <option value="portrait" data-i18n="contact.typePortrait">Portrait</option>
+              <option value="family" data-i18n="contact.typeFamily">Family</option>
+              <option value="wedding" data-i18n="contact.typeWedding">Wedding</option>
             </select>
           </div>
           <div class="form__field">
-            <label for="message">Комментарий</label>
-            <textarea id="message" name="message" rows="4" placeholder="Расскажите о вашей идее"></textarea>
+            <label for="message" data-i18n="contact.message">Comment</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your idea" data-i18n-placeholder="contact.messagePh"></textarea>
           </div>
-          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <button type="submit" class="btn btn--primary" data-i18n="contact.submit">Send request</button>
           <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -195,7 +201,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer__inner">
-      <p class="footer__copy">© 2026 Анна Соколова. Все права защищены.</p>
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Anna Sokolova. All rights reserved.</p>
       <div class="footer__social">
         <a href="#" aria-label="Instagram">Instagram</a>
         <a href="#" aria-label="Telegram">Telegram</a>
